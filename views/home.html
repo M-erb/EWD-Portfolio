@@ -1,0 +1,122 @@
+<header class="blue_solid hero">
+  <div class="action_item_box wow fadeInDown" data-wow-delay="1s">
+    <div class="typed_wrap">
+      <h2>I am <span class="typed"></span></h2>
+      <script src="content/js/typed-config.js"></script>
+    </div>
+    <p><a class="button btn_orange" href="/say-hello#homeaction">Hire Me!</a></p>
+  </div>
+  <div class="hero_images">
+    <img class="b_img1 b_img drag_box wow fadeIn" src="content/img/black-tablet.png" alt="Internet ready devices">
+    <img class="b_img2 b_img drag_box wow fadeIn" src="content/img/laptop.png" alt="Internet ready devices">
+    <img class="b_img3 b_img drag_box wow fadeIn" src="content/img/desk-top.png" alt="Internet ready devices">
+    <img class="b_img4 b_img drag_box wow fadeIn" src="content/img/white-phone.png" alt="Internet ready devices">
+    <img class="b_img5 b_img drag_box wow fadeIn" src="content/img/white-tablet.png" alt="Internet ready devices">
+    <img class="b_img6 b_img drag_box wow fadeIn" src="content/img/credit-cards.png" alt="Internet ready devices">
+    <img class="b_img7 b_img drag_box wow fadeIn" src="content/img/note-book.png" alt="Internet ready devices">
+    <img class="b_img8 b_img drag_box wow fadeIn" src="content/img/note-pad.png" alt="Internet ready devices">
+    <img class="b_img9 b_img drag_box wow fadeIn" src="content/img/svg/sm-laptop.svg" alt="Internet ready devices">
+    <img class="b_img10 b_img drag_box wow fadeIn" src="content/img/watch.png" alt="Internet ready devices">
+  </div>
+  <script src="content/js/drag.js"></script>
+</header>
+<div class="page_section">
+  <div class="page_wrap">
+    <h2>About Me</h2>
+    <div class="about_me">
+      <div class="about_img">
+        <img src="content/img/profile.png" alt="Image of Michael Erb" />
+      </div>
+      <div class="about_me_content">
+        <p><span>Hi,</span> my name is Michael Erb. I am a front end web developer and designer. I LOVE learning new things
+        about this thing we call the WEB. I believe in being straight forward, fun, and always striving to learn something new.
+       I have successfully completed a few projects and am looking for more opportunities to learn and grow.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page_section offwhite_solid">
+  <div class="page_wrap">
+    <h2></h2>
+    <div class="flex_container_around">
+
+      <div class="flex_box_sm tools">
+        <img class="tool_img" src="content/img/tools/HTML5_Badge_256.png" alt="HTML5 logo" />
+        <div id="html5" class="tool_info_box">
+          <h3>HTML5
+            <div ng-click="toggleTools('html5')" class="tools_toggle">
+              <div></div>
+              <div></div>
+            </div>
+          </h3>
+          <p class="tools_info">With structuring and organizing content, nesting elements, simple syntax, HTML is not going anywhere.
+          With the additin of HTML5 and more being standaredized soon, this has really changed the web for the better.</p>
+        </div>
+      </div>
+      <div class="flex_box_sm tools">
+        <img class="tool_img" src="content/img/tools/badge-css-3-512.png" alt="CSS3 logo" />
+        <div id="css3" class="tool_info_box">
+          <h3>CSS3
+            <div ng-click="toggleTools('css3')" class="tools_toggle">
+              <div></div>
+              <div></div>
+            </div>
+          </h3>
+          <p class="tools_info">CSS is simply unreal in how simple it is, but this can become complicated fast. It is important to document reasoning with comments
+          and leave a 'clean' code for others to maintain.</p>
+        </div>
+      </div>
+      <div class="flex_box_sm tools">
+        <img class="tool_img" src="content/img/tools/Unofficial_JavaScript_logo.png" alt="JavaScript logo" />
+        <div id="js" class="tool_info_box">
+          <h3>Java Script
+            <div ng-click="toggleTools('js')" class="tools_toggle">
+              <div></div>
+              <div></div>
+            </div>
+          </h3>
+          <p class="tools_info">I have used JavaScript in all of my projects. It seems to go hand in hand with HTML and CSS for getting things done in the front end.
+            With Libraries like JQuery to back you up, the possibilities seem endless.</p>
+        </div>
+      </div>
+      <div class="flex_box_sm tools">
+        <img class="tool_img" src="content/img/tools/angular-js.png" alt="Angular.js logo" />
+
+        <div id="angular" class="tool_info_box">
+          <h3>Angular.js
+            <div ng-click="toggleTools('angular')" class="tools_toggle">
+              <div></div>
+              <div></div>
+            </div>
+          </h3>
+          <p class="tools_info">I have been using Angular.js for 3 months and I find it hard to not use it in a project. It has so many applications
+          and can make development faster in set up.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="full_page_section">
+  <div class="page_wrap">
+    <h2>My Work</h2>
+    <div class="flex_container_center">
+
+
+      <div class="flex_card" ng-repeat="myWork in myWorks">
+        <div class="img_wrap">
+          <a ng-href="{{myWork.url}}" target="_blank" rel="noreferrer">
+            <img src="content/img/tiedwithstrings.png" ng-src="{{myWork.img}}" alt="tiedwithstrings.com" />
+          </a>
+        </div>
+        <div class="card_text">
+          <p><a ng-href="{{myWork.url}}" target="_blank" rel="noreferrer">{{myWork.title}}</a></p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,143 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,300';
+@import 'https://fonts.googleapis.com/css?family=Poiret+One';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+@import 'animate.css';
+@import 'nav-footer.css';
+@import 'home.css';
+@import 'controls.css';
+@import 'background-colors.css';
+/*====================-RESET CSS-=======================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 60%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {display: block;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+img {display: block; max-width: 100%}
+*, *::after, *::before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+h1 {
+  font-size: 4em;
+}
+h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+header h2 {
+	margin-bottom: 0.1em;
+}
+h3 {
+  font-size: 1.5em;
+}
+a {
+	color: #fff;
+}
+h2 span a{
+	font-size: 0.5em;
+}
+p {
+	font-size: 1.2em;
+}
+/*wow*/
+.wow:first-child {
+	visibility: hidden;
+}
+/*-body*/
+body {
+  line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+	position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: 'open sans', lato, sans-serif;
+  color: #777;
+  display: flex;
+  flex-direction: column;
+	width: 100%;
+}
+/*-structure*/
+header {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.header_padding {
+	/*only needed if you do not want objects under the nav*/
+	padding: 6em 0;
+}
+main {
+	width: 100%;
+	height: 100%;
+}
+.page_wrap {
+  width: 90%;
+  max-width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page_section {
+  width: 100%;
+  padding: 3em 0 4em 0;
+}
+.page_section h2 {
+	text-align: center;
+}
+.page_section p {
+	color: #595959;
+}
+
+.full_page_section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 6em 0;
+	position: relative;
+}
+.full_page_section h2 {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+}
+.full_page_section p, .page_section p {
+	color: #BDBDBD;
+}
+footer {
+	padding: 3em 0;
+}
+
+@media only screen and (min-width:771px){
+
+}
+@media only screen and (max-width:600px){
+	.page_wrap {
+		width: 96%;
+	}
+	.contact_us_form {
+		width: 80%;
+	}
+}
+@media only screen and (max-width:400px){
+
+}
