@@ -23,11 +23,11 @@
 <div class="page_section">
   <div class="page_wrap">
     <h2>About Me</h2>
-    <div class="about_me">
-      <div class="about_img">
+    <div class="side_card">
+      <div class="side_card_img">
         <img src="content/img/profile.png" alt="Image of Michael Erb" />
       </div>
-      <div class="about_me_content">
+      <div class="special_paragraph">
         <p><span>Hi,</span> my name is Michael Erb. I am a front end web developer and designer. I LOVE learning new things
         about this thing we call the WEB. I believe in being straight forward, fun, and always striving to learn something new.
        I have successfully completed a few projects and am looking for more opportunities to learn and grow.</p>
@@ -36,62 +36,22 @@
   </div>
 </div>
 
+
 <div class="page_section offwhite_solid">
   <div class="page_wrap">
     <h2></h2>
     <div class="flex_container_around">
 
-      <div class="flex_box_sm tools">
-        <img class="tool_img" src="content/img/tools/HTML5_Badge_256.png" alt="HTML5 logo" />
-        <div id="html5" class="tool_info_box">
-          <h3>HTML5
-            <div ng-click="toggleTools('html5')" class="tools_toggle">
+      <div class="flex_box_sm tools" ng-repeat="item in techList">
+        <img class="tool_img" src="content/img/tools/HTML5_Badge_256.png" ng-src="content/img/tools/{{item.img}}" alt="{{item.name}} logo" />
+        <div class="tool_info_box ng-class:{'show_tool' : item.display}">
+          <h3>{{item.name}}
+            <div id="tool{{$index}}" ng-click="toggleTool($index)" class="tools_toggle">
               <div></div>
               <div></div>
             </div>
           </h3>
-          <p class="tools_info">With structuring and organizing content, nesting elements, simple syntax, HTML is not going anywhere.
-          With the additin of HTML5 and more being standaredized soon, this has really changed the web for the better.</p>
-        </div>
-      </div>
-      <div class="flex_box_sm tools">
-        <img class="tool_img" src="content/img/tools/badge-css-3-512.png" alt="CSS3 logo" />
-        <div id="css3" class="tool_info_box">
-          <h3>CSS3
-            <div ng-click="toggleTools('css3')" class="tools_toggle">
-              <div></div>
-              <div></div>
-            </div>
-          </h3>
-          <p class="tools_info">CSS is simply unreal in how simple it is, but this can become complicated fast. It is important to document reasoning with comments
-          and leave a 'clean' code for others to maintain.</p>
-        </div>
-      </div>
-      <div class="flex_box_sm tools">
-        <img class="tool_img" src="content/img/tools/Unofficial_JavaScript_logo.png" alt="JavaScript logo" />
-        <div id="js" class="tool_info_box">
-          <h3>Java Script
-            <div ng-click="toggleTools('js')" class="tools_toggle">
-              <div></div>
-              <div></div>
-            </div>
-          </h3>
-          <p class="tools_info">I have used JavaScript in all of my projects. It seems to go hand in hand with HTML and CSS for getting things done in the front end.
-            With Libraries like JQuery to back you up, the possibilities seem endless.</p>
-        </div>
-      </div>
-      <div class="flex_box_sm tools">
-        <img class="tool_img" src="content/img/tools/angular-js.png" alt="Angular.js logo" />
-
-        <div id="angular" class="tool_info_box">
-          <h3>Angular.js
-            <div ng-click="toggleTools('angular')" class="tools_toggle">
-              <div></div>
-              <div></div>
-            </div>
-          </h3>
-          <p class="tools_info">I have been using Angular.js for 3 months and I find it hard to not use it in a project. It has so many applications
-          and can make development faster in set up.</p>
+          <p class="tools_info">{{item.notes}}</p>
         </div>
       </div>
 
@@ -100,23 +60,56 @@
 </div>
 
 <div class="full_page_section">
-  <div class="page_wrap">
-    <h2>My Work</h2>
-    <div class="flex_container_center">
-
-
-      <div class="flex_card" ng-repeat="myWork in myWorks">
-        <div class="img_wrap">
-          <a ng-href="{{myWork.url}}" target="_blank" rel="noreferrer">
-            <img src="content/img/tiedwithstrings.png" ng-src="{{myWork.img}}" alt="tiedwithstrings.com" />
-          </a>
-        </div>
-        <div class="card_text">
-          <p><a ng-href="{{myWork.url}}" target="_blank" rel="noreferrer">{{myWork.title}}</a></p>
-        </div>
+  <h2>My Work</h2>
+  <div class="flex_container_center">
+    <div class="flex_card" ng-repeat="myWork in myWorks">
+      <div class="img_wrap">
+        <a ng-href="{{myWork.url}}" target="_blank" rel="noreferrer">
+          <img src="content/img/tiedwithstrings.png" ng-src="{{myWork.img}}" alt="tiedwithstrings.com" />
+        </a>
       </div>
-
-
+      <div class="card_text">
+        <p><a ng-href="{{myWork.url}}" target="_blank" rel="noreferrer">{{myWork.title}}</a></p>
+      </div>
     </div>
+  </div>
+</div>
+
+<div class="full_page_section orange_solid">
+  <h2>Don't be shy</h2>
+  <div class="page_wrap">
+    <div class="special_paragraph home_contactText">
+      <p><span>Wow!</span>You made it to the bottom. See anything you like? Let me know and fill out the form and I will get back to ya.</p>
+    </div>
+    <form class="contact_us_form" accept-charset="UTF-8" action="https://an140.infusionsoft.com/app/form/process/ad7067870bcf45d434a022c9b7d4ca15" class="infusion-form" method="POST">
+      <input name="inf_form_xid" type="hidden" value="ad7067870bcf45d434a022c9b7d4ca15" />
+      <input name="inf_form_name" type="hidden" value="say hello form" />
+      <input name="infusionsoft_version" type="hidden" value="1.58.0.38" />
+      <div class="me_input me_input_style">
+        <label class="orange_solid">First Name*</label>
+        <input placeholder="Bob" class="infusion-field-input-container" id="inf_field_FirstName" name="inf_field_FirstName" type="text" required/>
+      </div>
+      <div class="me_input me_input_style">
+        <label class="orange_solid">Last Name*</label>
+        <input placeholder="The Builder" class="infusion-field-input-container" id="inf_field_LastName" name="inf_field_LastName" type="text" required/>
+      </div>
+      <div class="me_input me_input_style">
+        <label class="orange_solid">Company</label>
+        <input placeholder="Builder Inc." class="infusion-field-input-container" id="inf_field_Company" name="inf_field_Company" type="text" />
+      </div>
+      <div class="me_input me_input_style">
+        <label class="orange_solid">Email*</label>
+        <input placeholder="bob.datbuilder@gmail.com" class="infusion-field-input-container" id="inf_field_Email" name="inf_field_Email" type="text" required/>
+      </div>
+      <div class="me_input me_input_style">
+        <label class="orange_solid">What did you have in mind?*</label>
+        <textarea placeholder="I need an awesome web site!" cols="24" id="inf_custom_Whatwouldyouliketotalkabout" name="inf_custom_Whatwouldyouliketotalkabout" rows="5" required></textarea>
+      </div>
+      <div class="me-submit-wrap">
+        <input class="btn btn_green" type="submit" value="Submit" />
+      </div>
+    </form>
+    <script type="text/javascript" src="https://an140.infusionsoft.com/app/webTracking/getTrackingCode?trackingId=ce1c56f581c3fcee728d109870c1eb9a"></script>
+
   </div>
 </div>

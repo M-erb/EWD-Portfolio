@@ -4,17 +4,32 @@
     <p></p>
   </div>
 </header>
-<div class="full_page_section gray_solid">
+<div class="page_section gray_solid">
   <div class="page_wrap">
-    <div class="about_me">
-      <div class="about_img">
-        <a href="http://codepen.io/merb/" target="_blank" rel="noreferrer">
-          <img src="content/img/Codepen-Logo.png" alt="Code pen logo" />
+    <div class="side_card" ng-repeat="item in playGroundList">
+      <div class="side_card_img">
+        <a ng-href="{{item.link}}" target="_blank" rel="noreferrer">
+          <img src="content/img/Codepen-Logo.png" ng-src="content/img/{{item.img}}" alt="{{item.name}} logo" />
         </a>
       </div>
-      <div class="about_me_content">
-        <p><span>Hey,</span> check out my pens on <a href="http://codepen.io/merb" target="_blank" rel="noreferrer">codepen.io</a>
-        I am always adding a new project or experiment.</p>
+      <div class="special_paragraph">
+        <p><span><a ng-href="{{item.link}}" target="_blank" rel="noreferrer">{{item.name}}</a>,</span> {{item.notes}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="full_page_section orange_solid">
+  <h2>My Work</h2>
+  <div class="flex_container_center">
+    <div class="flex_card" ng-repeat="myWork in myWorks">
+      <div class="img_wrap">
+        <a ng-href="{{myWork.url}}" target="_blank" rel="noreferrer">
+          <img src="content/img/tiedwithstrings.png" ng-src="{{myWork.img}}" alt="tiedwithstrings.com" />
+        </a>
+      </div>
+      <div class="card_text">
+        <p><a ng-href="{{myWork.url}}" target="_blank" rel="noreferrer">{{myWork.title}}</a></p>
       </div>
     </div>
   </div>

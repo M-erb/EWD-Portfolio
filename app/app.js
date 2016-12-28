@@ -38,10 +38,12 @@ ewdApp.run(['$rootScope', '$location', '$stateParams', '$anchorScroll', function
 }]);
 
 ewdApp.controller('mainCtrl', ['$scope', function($scope){
-
-  $scope.toggleTools = function(toolBox) {
-    var toolInfoBox = document.getElementById(toolBox);
-    $(toolInfoBox).toggleClass('me_show');
+  $scope.toggleTool = function(i) {
+    if($scope.techList[i].display == false){
+      $scope.techList[i].display = true
+    }else {
+      $scope.techList[i].display = false
+    }
   };
 
   $scope.myWorks = [
@@ -62,6 +64,44 @@ ewdApp.controller('mainCtrl', ['$scope', function($scope){
       info: 'One page site for company'
     }
   ];
+
+  $scope.techList = [
+    {
+      name: 'HTML5',
+      img: 'HTML5_Badge_256.png',
+      display: false,
+      notes: '95%'
+    }, {
+      name: 'CSS3',
+      img: 'badge-css-3-512.png',
+      display: false,
+      notes: '95%'
+    }, {
+      name: 'JavaScript',
+      img: 'Unofficial_JavaScript_logo.png',
+      display: false,
+      notes: '63%'
+    }, {
+      name: 'Angular.js',
+      img: 'angular-js.png',
+      display: false,
+      notes: '70%'
+    }
+  ]
+
+  $scope.playGroundList = [
+    {
+      name: 'codepen.io',
+      img: 'Codepen-Logo.png',
+      link: 'http://codepen.io/merb/',
+      notes: 'check out my pens, I am always adding a new experiment.'
+    }, {
+      name: 'github.com',
+      img: 'github-logojpg.jpg',
+      link: 'https://github.com/M-erb',
+      notes: 'see my activity on github.'
+    }
+  ]
 
 }]);
 

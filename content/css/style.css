@@ -105,9 +105,6 @@ main {
 .page_section h2 {
 	text-align: center;
 }
-.page_section p {
-	color: #595959;
-}
 
 .full_page_section {
   width: 100%;
@@ -119,9 +116,6 @@ main {
 	width: 100%;
 	color: #fff;
 	text-align: center;
-}
-.full_page_section p, .page_section p {
-	color: #BDBDBD;
 }
 footer {
 	padding: 3em 0;
