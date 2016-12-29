@@ -177,103 +177,40 @@ header.hero {
 	flex: 1 1 50%;
 }
 
-/*-Tools I use*/
 .flex_container_around {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	height: 100%;
 }
-.flex_box_sm {
-	text-align: center;
-	flex: 0 0 15em;
-}
 .tool_img {
-	width: 15em;
-	-webkit-filter: drop-shadow(5px 5px 5px #777);
-	filter: drop-shadow(5px 5px 5px #777);
-}
-.tools {
-	position: relative;
-	margin: 2em;
-}
-.tools h3 {
-	margin: 1em;
-	position: relative;
-	font-weight: bold;
-}
-/*tools toggle btn*/
-.tools_toggle {
-	cursor: pointer;
-	position: absolute;
-	width: 1.5em;
-	height: 1.5em;
-	top: -0.2em;
-	left: 93%;
-	background: rgba(71,175,194,1);
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	transition: all 0.3s;
-}
-.tools_toggle div {
-	border: 2px solid #fff;
-	border-radius: 20px;
-	width: 0.8em;
-	height: 0.1px;
-	position: absolute;
+	width: 70px;
 	align-self: center;
-}
-.tools_toggle div:last-child {
-	transform: rotate(90deg);
+	-webkit-filter: drop-shadow(5px 5px 5px #777);
+	filter: drop-shadow(5px 5px 5px rgba(41,41,41,0.3));
+	transition: transform 0.3s;
 }
 
-.show_tool .tools_toggle {
-	transform: rotate(225deg);
+.tools {
+	margin: 1em;
+	display: flex;
+	justify-content: center;
+	transition: transform 0.3s;
+	position: relative;
+}
+.tools:hover {
+	transform: scale(1.3);
+	z-index: 3;
 }
 
 .tool_info_box {
-	padding: 0;
+	margin-left: 1em;
+}
+.tools h3 {
+	margin-bottom: 0.3em;
+	font-weight: bold;
 }
 
-.tools_info {
-	opacity: 0;
-	transition: all 0.3s;
-	position: 0;
-	line-height: 0;
-}
-.show_tool .tools_info {
-	visibility: visible;
-  opacity: 1;
-  height: auto;
-  padding: 1.2em 0;
-  margin-bottom: 1.3em;
-  line-height: 1.3;
-  background: #fff;
-  border-radius: 3px;
-  font-size: 4rem;
-  text-align: center;
-  font-weight: bolder;
-  color: rgba(200,200,200,1);
-}
-
-/*Tools toogle aniamtions*/
-.tool_info_box.ng-hide-remove {
-	/* when showing */
-	animation:0.3s show_fadIn ease;
-}
-
-.tool_info_box.ng-hide-add {
-	/* when hiding */
-	animation:0.3s show_fadIn ease;
-	-webkit-animation-direction: reverse;
-  animation-direction: reverse;
-}
-
-@keyframes show_fadIn {
-	0% {opacity: 0;height: 0;};
-	100% {opacity: 1;height: 100%};
-}
 
 /*cards*/
 .side_card {

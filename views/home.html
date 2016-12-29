@@ -39,22 +39,19 @@
 
 <div class="page_section offwhite_solid">
   <div class="page_wrap">
-    <h2></h2>
-    <div class="flex_container_around">
+    <h2>Tools</h2>
+    <div class="page_wrap">
+      <div class="flex_container_center">
 
-      <div class="flex_box_sm tools" ng-repeat="item in techList">
-        <img class="tool_img" src="content/img/tools/HTML5_Badge_256.png" ng-src="content/img/tools/{{item.img}}" alt="{{item.name}} logo" />
-        <div class="tool_info_box ng-class:{'show_tool' : item.display}">
-          <h3>{{item.name}}
-            <div id="tool{{$index}}" ng-click="toggleTool($index)" class="tools_toggle">
-              <div></div>
-              <div></div>
-            </div>
-          </h3>
-          <p class="tools_info">{{item.notes}}</p>
+        <div class="tools" ng-repeat="item in techList">
+          <img class="tool_img" src="content/img/tools/HTML5_Badge_256.png" ng-src="content/img/tools/{{item.img}}" alt="{{item.name}} logo" />
+          <div class="tool_info_box">
+            <h3>{{item.name}}</h3>
+            <p class="tools_info">{{item.notes}}</p>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
 </div>

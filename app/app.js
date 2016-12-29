@@ -69,23 +69,43 @@ ewdApp.controller('mainCtrl', ['$scope', function($scope){
     {
       name: 'HTML5',
       img: 'HTML5_Badge_256.png',
-      display: false,
       notes: '95%'
     }, {
       name: 'CSS3',
       img: 'badge-css-3-512.png',
-      display: false,
-      notes: '95%'
+      notes: '93%'
+    }, {
+      name: 'Sass/SCSS',
+      img: 'sass-logo.svg',
+      notes: '43%'
     }, {
       name: 'JavaScript',
       img: 'Unofficial_JavaScript_logo.png',
-      display: false,
-      notes: '63%'
+      notes: '56%'
+    }, {
+      name: 'node.js',
+      img: 'nodejs-new-pantone-black.png',
+      notes: '12%'
+    }, {
+      name: 'PHP',
+      img: 'PHP-logo.svg.png',
+      notes: '10%'
     }, {
       name: 'Angular.js',
       img: 'angular-js.png',
-      display: false,
       notes: '70%'
+    }, {
+      name: 'git',
+      img: 'Git-Icon-1788C.png',
+      notes: '60%'
+    }, {
+      name: 'Adobe Photoshop',
+      img: 'Adobe_Photoshop_CS5_icon.png',
+      notes: '16%'
+    }, {
+      name: 'Adobe Illistrator',
+      img: 'Adobe_Illustrator_CS5_icon.png',
+      notes: '23%'
     }
   ]
 
