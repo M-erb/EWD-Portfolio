@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="application-name" content="Erb Web Dev"/>
-  <meta name="description" content="">
+  <meta name="description" content="Web development done right. Michael will work with you to get exactly what you are looking for">
   <meta name="theme-color" content="#47AFC2">
   <meta name="p:domain_verify" content="e22136ab81ca3341b04755aadb53f77f"/>
   <title>Michael Erb</title>
@@ -28,10 +28,12 @@
   </script>
 </head>
 <body class="gray_solid">
-    <nav ng-include src="'views/nav.html'"></nav>
+  <nav ng-include src="'views/nav.html'" ng-controller="navCtrl"></nav>
 
-    <main ui-view></main>
+  <main ui-view></main>
 
-    <footer class="top_bottom_padding" ng-include src="'views/footer.html'"></footer>
+  <footer class="top_bottom_padding" ng-include src="'views/footer.html'"></footer>
+  <script src="content/js/jump.js"></script>
+  <script src="content/js/jump-config.js"></script>
 </body>
 </html>

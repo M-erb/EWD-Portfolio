@@ -9,16 +9,18 @@
       <div><a href="/say-hello">say hello</a></div>
     </nav>
     <div class="mobile_nav">
-      <div id="m_nav_btn">
+      <div id="m_nav_btn" ng-class="{'close_btn':navModel}" ng-click="toggleNav()">
         <span>Menu</span>
         <div class="top"></div>
         <div class="mid"></div>
         <div class="bottom"></div>
       </div>
-      <nav class="mobile_nav_options">
-        <div><a href="/">home</a></div>
-        <div><a href="/playground">playground</a></div>
-        <div><a href="/say-hello">say hello</a></div>
+      <nav class="mobile_nav_options ng-class:{'mobile_nav_open':navModel}"  ng-click="toggleNav()">
+        <div class="mobile_nav_options_inner">
+          <div class="option"><a href="/">home</a></div>
+          <div class="option"><a href="/playground">playground</a></div>
+          <div class="option"><a href="/say-hello">say hello</a></div>
+        </div>
       </nav>
       <script src="content/js/nav.js"></script>
       <script src="content/js/headroom.config.js"></script>

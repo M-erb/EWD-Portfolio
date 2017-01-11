@@ -125,11 +125,20 @@ ewdApp.controller('mainCtrl', ['$scope', function($scope){
 
 }]);
 
+ewdApp.controller('navCtrl', ['$scope', function($scope){
+
+  $scope.navModel = false
+  $scope.toggleNav = function(){
+    if($scope.navModel == false) {
+      $scope.navModel = true
+    }else {
+      $scope.navModel = false
+    }
+  }
+
+}]);
+
 /*-- TO DO
-
-add github to projects page
-
-Add work to projects page
 
 add the simple tools to projects page
 
