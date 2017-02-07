@@ -1,0 +1,27 @@
+<header class="header_padding gray_solid">
+  <div class="page_wrap wow fadeInDown">
+    <h2>My Work</h2>
+    <p></p>
+  </div>
+</header>
+
+<div class="full_page_section orange_solid">
+  <div class="mini_page_section my_work_wrap" ng-repeat="item in myWorks">
+    <div class="img_box">
+      <img src="content/img/tiedwithstrings.png" ng-src="{{item.img}}" alt="image of {{item.title}}" />
+    </div>
+    <div class="info_box">
+      <h2>{{item.title}}</h2>
+      <p>{{item.tagLine}}</p>
+      <div class="btn_wrap">
+        <a ng-href="{{item.url}}" class="button btn_blue" target="_blank">Vistit Site</a>
+      </div>
+      <p>{{item.info}}</p>
+      <ul>
+        <li ng-repeat="feature in item.features">
+          {{feature}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

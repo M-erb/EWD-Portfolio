@@ -137,9 +137,13 @@
 	transition: all .3s;
 }
 .mid {
-	top: 43.5%;
+	top: 50%;
 	left: 0;
 	transition: all .3s;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 .bottom {
 	bottom: 0;
@@ -173,7 +177,10 @@
 /*-headroom nav*/
 .headroom {
     will-change: transform;
-    transition: transform 200ms linear;
+    transition: all 200ms linear;
+}
+.headroom--not-top {
+	background: rgba(89,89,89,.5);
 }
 .headroom--pinned {
     transform: translateY(0%);

@@ -4,9 +4,7 @@
       <h3><a href="/">Michael Erb</a></h3>
     </div>
     <nav class="nav_options">
-      <div><a href="/">home</a></div>
-      <div><a href="/playground">playground</a></div>
-      <div><a href="/say-hello">say hello</a></div>
+      <div ng-repeat="item in navItems"><a href="{{item.url}}">{{item.label}}</a></div>
     </nav>
     <div class="mobile_nav">
       <div id="m_nav_btn" ng-class="{'close_btn':navModel}" ng-click="toggleNav()">
@@ -17,12 +15,9 @@
       </div>
       <nav class="mobile_nav_options ng-class:{'mobile_nav_open':navModel}"  ng-click="toggleNav()">
         <div class="mobile_nav_options_inner">
-          <div class="option"><a href="/">home</a></div>
-          <div class="option"><a href="/playground">playground</a></div>
-          <div class="option"><a href="/say-hello">say hello</a></div>
+          <div class="option" ng-repeat="item in navItems"><a href="{{item.url}}">{{item.label}}</a></div>
         </div>
       </nav>
-      <script src="content/js/nav.js"></script>
       <script src="content/js/headroom.config.js"></script>
     </div>
   </nav>

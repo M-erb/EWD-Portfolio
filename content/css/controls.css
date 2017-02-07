@@ -5,7 +5,7 @@
     border-radius: 3px;
     display: inline-block;
     line-height: 20px;
-    transition: all .5s;
+    transition: all .3s;
     margin-top: 20px;
     white-space: nowrap;
     box-shadow: 1px 1px 3px rgba(41,41,41,0.5);
@@ -17,6 +17,7 @@
     .button:hover {
         background: transparent;
         box-shadow: 6px 6px 3px rgba(41,41,41,0.4);
+        transform: scale(1.03);
     }
 
 .btn_white {
@@ -62,7 +63,7 @@
     color: white;
     background: #2ECC71;
 }
-    .btn_blue:hover {
+    .btn_green:hover {
         color: white;
         background: #2ECC71;
     }
