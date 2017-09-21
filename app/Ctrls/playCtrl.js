@@ -27,7 +27,7 @@ ewdApp.controller('playCtrl', ['$scope', function($scope){
     }
   ];
 
-  $scope.playGroundList = [
+  $scope.devContactList = [
     {
       name: 'codepen.io',
       img: 'Codepen-Logo.png',
@@ -40,5 +40,7 @@ ewdApp.controller('playCtrl', ['$scope', function($scope){
       notes: 'see my activity on github.'
     }
   ]
+
+  $scope.playList = []
 
 }]);

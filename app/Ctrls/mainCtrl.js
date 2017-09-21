@@ -36,19 +36,27 @@ ewdApp.controller('mainCtrl', ['$scope', function($scope){
     {
       name: 'HTML5',
       img: 'HTML5_Badge_256.png',
-      notes: '95%'
+      notes: '98%'
     }, {
       name: 'CSS3',
       img: 'badge-css-3-512.png',
-      notes: '93%'
+      notes: '98%'
     }, {
       name: 'Sass/SCSS',
       img: 'sass-logo.svg',
-      notes: '43%'
+      notes: '80%'
     }, {
       name: 'JavaScript',
       img: 'Unofficial_JavaScript_logo.png',
-      notes: '56%'
+      notes: '80%'
+    }, {
+      name: 'Vue.js',
+      img: 'vuejs-logo.png',
+      notes: '85%'
+    }, {
+      name: 'Angular.js',
+      img: 'angular-js.png',
+      notes: '80%'
     }, {
       name: 'node.js',
       img: 'nodejs-new-pantone-black.png',
@@ -57,10 +65,6 @@ ewdApp.controller('mainCtrl', ['$scope', function($scope){
       name: 'PHP',
       img: 'PHP-logo.svg.png',
       notes: '10%'
-    }, {
-      name: 'Angular.js',
-      img: 'angular-js.png',
-      notes: '70%'
     }, {
       name: 'git',
       img: 'Git-Icon-1788C.png',
@@ -72,7 +76,7 @@ ewdApp.controller('mainCtrl', ['$scope', function($scope){
     }, {
       name: 'Adobe Illistrator',
       img: 'Adobe_Illustrator_CS5_icon.png',
-      notes: '23%'
+      notes: '33%'
     }
   ]
 
