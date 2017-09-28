@@ -21,7 +21,7 @@
     }
 
 .btn_white {
-    border: 1px solid white;
+    border: 3px solid #b5b5b5;
     color: #302B2C;
     background: white;
 }
@@ -30,7 +30,7 @@
     }
 
 .btn_darkgray {
-    border: 1px solid #2D2D30;
+    border: 3px solid #b5b5b5;
     color: white;
     background: #2D2D30;
 }
@@ -39,7 +39,7 @@
     }
 
 .btn_orange {
-    border: 1px solid rgba(245,95,65,1);
+    border: 3px solid #fff;
     color: white;
     background: rgba(245,95,65,1);
 }
@@ -49,7 +49,7 @@
     }
 
 .btn_blue {
-    border: 1px solid #47AFC2;
+    border: 3px solid #fff;
     color: white;
     background: #47AFC2;
 }
@@ -59,7 +59,7 @@
     }
 
 .btn_green {
-    border: 1px solid #2ECC71;
+    border: 3px solid #fff;
     color: white;
     background: #2ECC71;
 }
