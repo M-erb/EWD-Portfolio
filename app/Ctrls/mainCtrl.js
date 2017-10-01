@@ -9,6 +9,13 @@ ewdApp.controller('mainCtrl', ['$scope', function($scope){
 
   $scope.myWorks = [
     {
+      title: 'Fast Chat Scripts',
+      tagLine: 'Work project',
+      img: 'content/img/fastchatscripts.erbwebdev.com.png',
+      url: 'https://fastchatscripts.erbwebdev.com/',
+      info: 'Saw a need when working as a Customer Support Representetive at Infusionsoft for myself and co-workers. That was to reply back to customers fast. The goal of this project was to speed up common replys and information and yet stay away from our reps sounding like robots to customers. So created common friendly "good byes" for example. Also common explainations such as how to reset ones password. All in all it was a success and fun to collaborate with co-workers and managers with how best to impliment the project.',
+      features: ['angular.js', 'search bar', 'category search options', 'copy to clipboard buttons', 'rounter UI', 'feed back form']
+    }, {
       title: 'Key Codes',
       tagLine: 'Fun personal project',
       img: 'content/img/keycode.png',

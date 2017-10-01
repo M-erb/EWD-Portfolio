@@ -131,6 +131,7 @@ footer {
 .my_work_wrap {
   display: flex;
   justify-content: space-around;
+	align-items: flex-start;
   flex-wrap: wrap;
 }
 .img_box {
