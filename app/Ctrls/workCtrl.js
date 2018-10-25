@@ -18,13 +18,6 @@ ewdApp.controller('workCtrl', ['$scope', function($scope){
       info: 'I saw a few other examples of this and thought it a fun experiment. It reads keyboard events and dynamically displays the keyCode and name of the key from browser\'s DOM event object.',
       features: ['vanilla JS', 'keyboard event handling']
     }, {
-      title: 'Mrmroofing',
-      tagLine: 'One page site for client',
-      img: 'content/img/mrmroofing.png',
-      url: 'http://mrmroofingllc.com/',
-      info: 'One page site for a client. Using just classic HTML CSS and Javascript, nothing too fancy',
-      features: ['Smooth scroll to page sections', 'Client Work', 'Mobile Responsive design']
-    }, {
       title: 'tied with strings',
       tagLine: 'E-commerce site',
       img: 'content/img/tiedwithstrings.png',

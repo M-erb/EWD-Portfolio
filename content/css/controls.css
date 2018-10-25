@@ -143,35 +143,35 @@
 
 /*place holder style*/
 .me_input input::-webkit-input-placeholder {
-    color: rgba(200,200,200,.3);
+    color: rgba(255,255,255,.5);
     font-size: 0.9em;
 }
 .me_input input::-moz-placeholder {
-    color: rgba(200,200,200,.3);
+    color: rgba(255,255,255,.5);
     font-size: 0.9em;
 }
 .me_input input:-ms-input-placeholder {
-    color: rgba(200,200,200,.3);
+    color: rgba(255,255,255,.5);
     font-size: 0.9em;
 }
 .me_input input:-moz-placeholder {
-    color: rgba(200,200,200,.3);
+    color: rgba(255,255,255,.5);
     font-size: 0.9em;
 }
 .me_input textarea::-webkit-input-placeholder {
-    color: rgba(200,200,200,.3);
+    color: rgba(255,255,255,.5);
     font-size: 1em;
 }
 .me_input textarea::-moz-placeholder {
-    color: rgba(200,200,200,.3);
+    color: rgba(255,255,255,.5);
     font-size: 1em;
 }
 .me_input textarea:-ms-input-placeholder {
-    color: rgba(200,200,200,.3);
+    color: rgba(255,255,255,.5);
     font-size: 1em;
 }
 .me_input textarea:-moz-placeholder {
-    color: rgba(200,200,200,.3);
+    color: rgba(255,255,255,.5);
     font-size: 1em;
 }
 

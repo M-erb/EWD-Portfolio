@@ -135,7 +135,7 @@ footer {
   flex-wrap: wrap;
 }
 .img_box {
-  max-width: 500px
+  max-width: 500px;
   margin: 10px;
 	border: 10px solid #fff;
 }

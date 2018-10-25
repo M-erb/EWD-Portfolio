@@ -23,13 +23,6 @@ ewdApp.controller('mainCtrl', ['$scope', function($scope){
       info: 'I saw a few other examples of this and thought it a fun experiment. It reads keyboard events and dynamically displays the keyCode and name of the key from browser\'s DOM event object.',
       features: ['vanilla JS', 'keyboard event handling']
     }, {
-      title: 'Mrmroofing',
-      tagLine: 'One page site for client',
-      img: 'content/img/mrmroofing.png',
-      url: 'http://mrmroofingllc.com/',
-      info: 'One page site for a client. Using just classic HTML CSS and Javascript, nothing too fancy',
-      features: ['Smooth scroll to page sections', 'Client Work', 'Mobile Responsive design']
-    }, {
       title: 'tied with strings',
       tagLine: 'E-commerce site',
       img: 'content/img/tiedwithstrings.png',
@@ -50,47 +43,59 @@ ewdApp.controller('mainCtrl', ['$scope', function($scope){
     {
       name: 'HTML5',
       img: 'HTML5_Badge_256.png',
-      notes: '98%'
+      notes: ''
     }, {
       name: 'CSS3',
       img: 'badge-css-3-512.png',
-      notes: '98%'
+      notes: ''
     }, {
       name: 'Sass/SCSS',
       img: 'sass-logo.svg',
-      notes: '80%'
+      notes: ''
     }, {
       name: 'JavaScript',
       img: 'Unofficial_JavaScript_logo.png',
-      notes: '95%'
+      notes: ''
     }, {
       name: 'Vue.js',
       img: 'vuejs-logo.png',
-      notes: '95%'
+      notes: ''
     }, {
       name: 'Angular.js',
       img: 'angular-js.png',
-      notes: '80%'
+      notes: ''
+    }, {
+      name: 'webpack',
+      img: 'webpack.svg',
+      notes: ''
+    }, {
+      name: 'Typescript',
+      img: 'typescript.png',
+      notes: ''
+    }, {
+      name: 'ESLint',
+      img: 'eslint.svg',
+      notes: ''
     }, {
       name: 'node.js',
       img: 'nodejs-new-pantone-black.png',
-      notes: '12%'
+      notes: ''
     }, {
       name: 'git',
       img: 'Git-Icon-1788C.png',
-      notes: '80%'
+      notes: ''
     }, {
       name: 'gulp',
       img: 'gulp.png',
-      notes: '80%'
+      notes: ''
     }, {
       name: 'Adobe Photoshop',
       img: 'Adobe_Photoshop_CS5_icon.png',
-      notes: '26%'
+      notes: ''
     }, {
       name: 'Adobe Illustrator',
       img: 'Adobe_Illustrator_CS5_icon.png',
-      notes: '53%'
+      notes: ''
     }
   ]
 
